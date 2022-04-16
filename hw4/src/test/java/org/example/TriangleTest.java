@@ -1,13 +1,4 @@
-/**
- * Класс TriangleTest
- *
- * @author : Хильченко А.Н
- * @project : HW_4
- * @date : 10.02.2022
- * @comments :
- */
-
-package ru.iq_soft;
+package org.example;
 
 import java.text.MessageFormat;
 
@@ -31,18 +22,18 @@ public class TriangleTest{
     Logger logger = LoggerFactory.getLogger("Unit test's");
 
     @Test
-    @DisplayName("Тест 1: проверка сходимости формулы на существующем треугольнике")
+    @DisplayName("Тест 1: проверка формулы на треугольнике")
     void test1() throws InvalidTriangleException, DegenerateTriangleException {
-        logger.info("Тест 1: проверка сходимости формулы на существующем треугольнике");
+        logger.info("Тест 1: проверка формулы на треугольнике");
         assertFalse(HeronTriangle.getSquare(3,6,7)==0);
         logger.info("\tТест успешен");
     }
 
     @ParameterizedTest
     @CsvSource({"3,6,7,8.94427190999916","-3,-6,-7,8.94427190999916","3,-6,7,8.94427190999916","7,6,7,18.973665961010276"})
-    @DisplayName("Тест 2: проверка корректности вычисления площади на существующих треугольниках")
+    @DisplayName("Тест 2: проверка корректности вычисления площади")
     void test2(int a, int b, int c, double d) throws InvalidTriangleException, DegenerateTriangleException {
-        logger.info("Тест 2: проверка корректности вычисления площади на существующих треугольниках");
+        logger.info("Тест 2: проверка корректности вычисления площади");
         logger.info("\tВходящие параметры - (a,b,c) - " +a+", "+b+", "+c);
         assertEquals(HeronTriangle.getSquare(a,b,c),d);
         logger.info("\tТест успешен");
@@ -50,22 +41,22 @@ public class TriangleTest{
 
     @ParameterizedTest
     @CsvFileSource(resources = "/InvalidTriangles.csv")
-    @DisplayName("Test 3: проверка корректности срабатывания исключнения при вырождении в точку или отрезок")
+    @DisplayName("Test 3: проверка корректности срабатывания исключнения")
     void test3(int a, int b, int c) throws InvalidTriangleException, DegenerateTriangleException {
-        logger.info("Тест 3: проверка корректности срабатывания исключнения при вырождении в точку или отрезок");
+        logger.info("Тест 3: проверка корректности срабатывания исключнения");
         // способ с обработкой (анализом) исключения
         DegenerateTriangleException thrown = assertThrows(
                 DegenerateTriangleException.class,
                 ()->HeronTriangle.getSquare(a, b, c));
-        assertTrue(thrown.getMessage().contains("Вырожденный в отрезок или точку треугольник не имеет площади"));
+        assertTrue(thrown.getMessage().contains("Если треугольник выражен в отрезок или точку, он не имеет площади"));
 
         logger.info("\tТест успешен");
     }
 
     @Test
-    @DisplayName("Тест 4: проверка корректности срабатывания исключения, когда треугольник не существует")
+    @DisplayName("Тест 4: проверка корректности срабатывания исключения, если треугольник не существует")
     void test4() throws InvalidTriangleException, DegenerateTriangleException {
-        logger.info("Тест 4: проверка корректности срабатывания исключения, когда треугольник не существует");
+        logger.info("Тест 4: проверка корректности срабатывания исключения, если треугольник не существует");
         // способ констатации факта исключения
         assertThrows(InvalidTriangleException.class, ()->HeronTriangle.getSquare(233, 6, 7));
         logger.info("\tТест успешен");
