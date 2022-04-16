@@ -1,10 +1,4 @@
-package ru.iq_soft; /**
- * Класс HeronTriangle
- *      класс описывающий тругольник с тремя известными сторонами
- * @author : Хильченко А.Н
- * @project : HW_4
- * @date : 11.02.2022
- */
+package org.example; 
 
 public class HeronTriangle {
 
