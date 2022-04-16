@@ -1,0 +1,557 @@
+{
+  "id": "fa05106c-ca78-4c07-b41d-14a5106829bf",
+  "version": "2.0",
+  "name": "Homework1",
+  "url": "https://www.laredoute.ru",
+  "tests": [{
+    "id": "90c8f9d0-4694-4689-bdc5-210aee89c959",
+    "name": "Test2",
+    "commands": [{
+      "id": "672cd166-66d2-41da-8550-32f2f5e49014",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba6f0b42-b1ac-4886-966e-9b40ddd5a9ca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1150x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ac746dc-5a88-461f-818c-8be577127cb4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.connection-layer .lr-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div/div[2]/div[3]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login/login.aspx')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16e165d6-3de1-47af-8dd7-1265d83743b3",
+      "comment": "",
+      "command": "type",
+      "target": "id=textBox_loginPage_alreadyCustomer_loginMail",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_loginMail", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_loginMail", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_loginMail", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_loginMail']", "xpath:attributes"],
+        ["xpath=//div[@id='inputEmail']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "closer.time@yandex.ru"
+    }, {
+      "id": "93c6924d-6c61-42e8-a2ee-843cd70b2b65",
+      "comment": "",
+      "command": "type",
+      "target": "id=textBox_loginPage_alreadyCustomer_password",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_password", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_password", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_password", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_password']", "xpath:attributes"],
+        ["xpath=//div[@id='inputPassword']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "DoctorWho925"
+    }, {
+      "id": "b7aa5d55-851a-4fb5-9862-4fc582c29ecc",
+      "comment": "",
+      "command": "click",
+      "target": "id=textBox_loginPage_alreadyCustomer_loginMail",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_loginMail", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_loginMail", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_loginMail", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_loginMail']", "xpath:attributes"],
+        ["xpath=//div[@id='inputEmail']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "379fd716-a018-4cdf-aef0-4daf08a16582",
+      "comment": "",
+      "command": "click",
+      "target": "id=textBox_loginPage_alreadyCustomer_password",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_password", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_password", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_password", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_password']", "xpath:attributes"],
+        ["xpath=//div[@id='inputPassword']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c4fe0a3-c1cb-4f6f-8ac7-d6eea8899d04",
+      "comment": "",
+      "command": "type",
+      "target": "id=textBox_loginPage_alreadyCustomer_password",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_password", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_password", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_password", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_password']", "xpath:attributes"],
+        ["xpath=//div[@id='inputPassword']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "kfhifhsiufhsiufhuidfuhsiu"
+    }, {
+      "id": "49ee5dd7-466c-4dba-afd6-a0951d21ea5b",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=validationButton_login",
+      "targets": [
+        ["id=validationButton_login", "id"],
+        ["css=#validationButton_login", "css:finder"],
+        ["xpath=//button[@id='validationButton_login']", "xpath:attributes"],
+        ["xpath=//div[@id='loginButtonsContainer']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0c73adc-7c79-4d68-ab2f-03dda4bd0a05",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=accountLogin",
+      "targets": [
+        ["id=accountLogin", "id"],
+        ["css=#accountLogin", "css:finder"],
+        ["xpath=//form[@id='accountLogin']", "xpath:attributes"],
+        ["xpath=//section[@id='corePage']/div/div/div/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47340089-a0f8-4d3b-afc9-1ca48e59f95c",
+      "comment": "",
+      "command": "click",
+      "target": "id=accountLogin",
+      "targets": [
+        ["id=accountLogin", "id"],
+        ["css=#accountLogin", "css:finder"],
+        ["xpath=//form[@id='accountLogin']", "xpath:attributes"],
+        ["xpath=//section[@id='corePage']/div/div/div/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "19433e72-9cd1-42d9-9e3d-ec14a2e514ac",
+    "name": "Test3",
+    "commands": [{
+      "id": "b0e820ff-0e99-4863-b228-8e9a1d5c5da8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bce78744-aec5-4835-8e78-d5941eb74fc9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "663549ab-ebf1-4057-a415-21d953cd2928",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Гостиная",
+      "targets": [
+        ["linkText=Гостиная", "linkText"],
+        ["css=#menuTrigger_3_1_1 > .menu_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Гостиная')]", "xpath:link"],
+        ["xpath=//li[@id='menuTrigger_3_1_1']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pplp/100/75363/cat-158092.aspx#shoppingtool=treestructureflyout')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Гостиная')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a40724d4-6bfb-4c01-996b-8439864dedd9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Гостиная",
+      "targets": [
+        ["linkText=Гостиная", "linkText"],
+        ["css=.menu_link--isActive", "css:finder"],
+        ["xpath=//a[contains(text(),'Гостиная')]", "xpath:link"],
+        ["xpath=//li[@id='menuTrigger_3_1_1']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pplp/100/75363/cat-158092.aspx#shoppingtool=treestructureflyout')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Гостиная')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13df9e02-307b-4234-9f09-f70abb043c3e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Диваны",
+      "targets": [
+        ["linkText=Диваны", "linkText"],
+        ["css=#menu_column_1 .menu_link--isActive", "css:finder"],
+        ["xpath=//a[contains(text(),'Диваны')]", "xpath:link"],
+        ["xpath=(//div[@id='menu_column_1']/ul/li[2]/a)[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pplp/100/75363/158092/cat-75396.aspx#shoppingtool=treestructureflyout')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Диваны')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5459f187-d9f8-4b0e-876b-4864562663b4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,51.20000076293945)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81cb5573-c777-4a8b-bf9c-5f1ffe311e64",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-xs-6:nth-child(1) .pl-image:nth-child(2)",
+      "targets": [
+        ["css=.col-xs-6:nth-child(1) .pl-image:nth-child(2)", "css:finder"],
+        ["xpath=//img[@alt='Диван 2-3-местный Nottingham LA REDOUTE INTERIEURS']", "xpath:img"],
+        ["xpath=//ul[@id='productList']/li/div/a/div/div/div/div/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8194132a-fccc-4f4e-a61f-489bdfadfdb7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,200)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28b813c4-e583-4982-9f4a-33751e653202",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btnAddToBasket_350060467",
+      "targets": [
+        ["id=btnAddToBasket_350060467", "id"],
+        ["css=#btnAddToBasket_350060467", "css:finder"],
+        ["xpath=//button[@id='btnAddToBasket_350060467']", "xpath:attributes"],
+        ["xpath=//div[@id='buttonsContainer_350060467']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ДОБАВИТЬ В КОРЗИНУ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e47a6cb-38f0-4351-a622-fa1457f38ff4",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnAddToBasket_350060467",
+      "targets": [
+        ["id=btnAddToBasket_350060467", "id"],
+        ["css=#btnAddToBasket_350060467", "css:finder"],
+        ["xpath=//button[@id='btnAddToBasket_350060467']", "xpath:attributes"],
+        ["xpath=//div[@id='buttonsContainer_350060467']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ДОБАВИТЬ В КОРЗИНУ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e5fab1a-4100-4dba-93d1-44cc55795382",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=btnAddToBasket_350060467",
+      "targets": [
+        ["id=btnAddToBasket_350060467", "id"],
+        ["css=#btnAddToBasket_350060467", "css:finder"],
+        ["xpath=//button[@id='btnAddToBasket_350060467']", "xpath:attributes"],
+        ["xpath=//div[@id='buttonsContainer_350060467']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Добавлено в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "870d3c99-b8dd-4b29-9545-96f4dec4607a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-xs-12 > .cfao-hide",
+      "targets": [
+        ["css=.col-xs-12 > .cfao-hide", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти в корзину')]", "xpath:link"],
+        ["xpath=//div[@id='layerAtb']/div[3]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/shoppingbasket/basket.aspx')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee8cdf2e-b50a-4f0b-b5b2-999fbf590641",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти в корзину",
+      "targets": [
+        ["linkText=Перейти в корзину", "linkText"],
+        ["css=.col-xs-12 > .cfao-hide", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти в корзину')]", "xpath:link"],
+        ["xpath=//div[@id='layerAtb']/div[3]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.laredoute.ru/shoppingbasket/basket.aspx?nc=2004')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ad3acc8-7fb7-48be-a5b1-3eb54d98f70d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Перейти в корзину",
+      "targets": [
+        ["linkText=Перейти в корзину", "linkText"],
+        ["css=.col-xs-12 > .cfao-hide", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти в корзину')]", "xpath:link"],
+        ["xpath=//div[@id='layerAtb']/div[3]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.laredoute.ru/shoppingbasket/basket.aspx?nc=2004')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d89cdf8-97a8-459d-9118-6d60f013fa2d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,174.39999389648438)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2887631e-c188-4aa9-b0c5-9895206e55e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=textBox_loginPage_alreadyCustomer_loginMail",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_loginMail", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_loginMail", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_loginMail", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_loginMail']", "xpath:attributes"],
+        ["xpath=//div[@id='inputEmail']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "closer.time@yandex.ru"
+    }, {
+      "id": "ef77b494-4431-4564-aba0-230f8927133f",
+      "comment": "",
+      "command": "type",
+      "target": "id=textBox_loginPage_alreadyCustomer_password",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_password", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_password", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_password", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_password']", "xpath:attributes"],
+        ["xpath=//div[@id='inputPassword']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "DoctorWho925"
+    }, {
+      "id": "72d44bbe-9cba-4929-a945-f8100ed68c45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.basket-product-delete",
+      "targets": [
+        ["css=.basket-product-delete", "css:finder"],
+        ["xpath=//div[@id='basketMain']/ul/li/div/div[2]/div[4]/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Удалить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c51e8ba8-5d34-4fab-8655-10d157ab8a76",
+      "comment": "",
+      "command": "type",
+      "target": "id=textBox_loginPage_alreadyCustomer_loginMail",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_loginMail", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_loginMail", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_loginMail", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_loginMail']", "xpath:attributes"],
+        ["xpath=//div[@id='inputEmail']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "closer.time@yandex.ru"
+    }, {
+      "id": "7b287544-8f5d-478f-8db8-b4ea136d7cce",
+      "comment": "",
+      "command": "type",
+      "target": "id=textBox_loginPage_alreadyCustomer_password",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_password", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_password", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_password", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_password']", "xpath:attributes"],
+        ["xpath=//div[@id='inputPassword']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "DoctorWho925"
+    }, {
+      "id": "44d83a87-f35b-4832-9ffc-8643f505ba0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-logo-img--ru",
+      "targets": [
+        ["css=.header-logo-img--ru", "css:finder"],
+        ["xpath=//img[@alt='Вернуться на главную страницу сайта La Redoute']", "xpath:img"],
+        ["xpath=//header[@id='header']/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fefca80-5819-4983-8adf-1048a737e25a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Одежда и обувь",
+      "targets": [
+        ["linkText=Одежда и обувь", "linkText"],
+        ["css=.default:nth-child(2) > .menu_title", "css:finder"],
+        ["xpath=//a[contains(text(),'Одежда и обувь')]", "xpath:link"],
+        ["xpath=//ul[@id='menuMainList']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pplp/100/cat-157878.aspx#shoppingtool=treestructureflyout')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Одежда и обувь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dbbf4ae-7697-4d3b-9080-018d1ff57b54",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Одежда и обувь",
+      "targets": [
+        ["linkText=Одежда и обувь", "linkText"],
+        ["css=.menu_title--isActive", "css:finder"],
+        ["xpath=//a[contains(text(),'Одежда и обувь')]", "xpath:link"],
+        ["xpath=//ul[@id='menuMainList']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pplp/100/cat-157878.aspx#shoppingtool=treestructureflyout')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Одежда и обувь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "eac0e644-2e1d-499e-b8b2-a7a8d1fc087f",
+    "name": "Test4",
+    "commands": [{
+      "id": "598f61e5-5501-41e2-bb56-6bb744e81cce",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "340883c4-a88b-438d-9bcc-c463edba25b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6278114b-7a30-4525-a437-6087c02ec6ce",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=РАСПРОДАЖА",
+      "targets": [
+        ["linkText=РАСПРОДАЖА", "linkText"],
+        ["css=.highlightsoft:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'РАСПРОДАЖА')]", "xpath:link"],
+        ["xpath=//ul[@id='menuMainList']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pplp/cat-1326.aspx#shoppingtool=treestructureflyout')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'РАСПРОДАЖА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b21a2679-b3d5-45a3-8c95-fdcf934453cd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=РАСПРОДАЖА",
+      "targets": [
+        ["linkText=РАСПРОДАЖА", "linkText"],
+        ["css=.menu_title--isActive", "css:finder"],
+        ["xpath=//a[contains(text(),'РАСПРОДАЖА')]", "xpath:link"],
+        ["xpath=//ul[@id='menuMainList']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pplp/cat-1326.aspx#shoppingtool=treestructureflyout')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'РАСПРОДАЖА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1ad92f5-1f7f-4fd9-8190-c0c6ab9f86b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer-phone",
+      "targets": [
+        ["css=.footer-phone", "css:finder"],
+        ["xpath=(//div[@id='panel1']/div/div[2]/div/div/div)[5]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[3]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50fe29ff-5230-40cf-8135-9409a76072d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer-phone",
+      "targets": [
+        ["css=.footer-phone", "css:finder"],
+        ["xpath=(//div[@id='panel1']/div/div[2]/div/div/div)[5]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[3]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "529d3b0e-e817-4fc6-b0b4-537ace268d32",
+      "comment": "",
+      "command": "click",
+      "target": "id=openReassuranceTime",
+      "targets": [
+        ["id=openReassuranceTime", "id"],
+        ["css=#openReassuranceTime", "css:finder"],
+        ["xpath=//span[@id='openReassuranceTime']", "xpath:attributes"],
+        ["xpath=//footer[@id='footer']/div[4]/div/div/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[3]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9efddd0-df63-42ef-9020-b686d0ec457a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.static-page-container",
+      "targets": [
+        ["css=.static-page-container", "css:finder"],
+        ["xpath=//div[@id='reassuranceTime']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73872f59-0ed4-478e-b911-ea8f4e5c053f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popin-btn-close-fixed",
+      "targets": [
+        ["css=.popin-btn-close-fixed", "css:finder"],
+        ["xpath=//div[@id='reassuranceTime']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div[7]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a065c650-8117-4c1c-8b33-81a5b929ea94",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["90c8f9d0-4694-4689-bdc5-210aee89c959"]
+  }],
+  "urls": ["https://www.laredoute.ru/"],
+  "plugins": []
+}

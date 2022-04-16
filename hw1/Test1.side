@@ -1,0 +1,202 @@
+{
+  "id": "8fee2619-9610-44c1-95b3-85bbbf23b240",
+  "version": "2.0",
+  "name": "Homework1",
+  "url": "https://www.laredoute.ru",
+  "tests": [{
+    "id": "ffe27b8e-621b-47ad-ac7b-e88fc93b1532",
+    "name": "Test1",
+    "commands": [{
+      "id": "d923d144-b2da-4c5a-ae6a-3812c5f288cb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b68c95da-4261-4c79-95d4-79ecaa413075",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1140x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aac3cf62-f809-43a1-85b3-e3e047b5e6d5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=iconProfil",
+      "targets": [
+        ["id=iconProfil", "id"],
+        ["css=#iconProfil", "css:finder"],
+        ["xpath=//button[@id='iconProfil']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e452396-057f-493e-b647-24220b7fcf1e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=iconProfil",
+      "targets": [
+        ["id=iconProfil", "id"],
+        ["css=#iconProfil", "css:finder"],
+        ["xpath=//button[@id='iconProfil']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e5d8651-287d-4f32-9d4f-4fe5f303d26b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.connection-layer .lr-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div/div[2]/div[3]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login/login.aspx')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "596eb5a1-6488-4987-80dc-1659968cf5b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=textBox_loginPage_alreadyCustomer_loginMail",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_loginMail", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_loginMail", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_loginMail", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_loginMail']", "xpath:attributes"],
+        ["xpath=//div[@id='inputEmail']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "closer.time@yandex.ru"
+    }, {
+      "id": "b0b71cfd-5226-425f-a61e-8cda65acc6fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=textBox_loginPage_alreadyCustomer_password",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_password", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_password", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_password", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_password']", "xpath:attributes"],
+        ["xpath=//div[@id='inputPassword']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "DoctorWho925"
+    }, {
+      "id": "d8fbcc0a-6b49-4244-ad1f-5a8b49f22c0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=textBox_loginPage_alreadyCustomer_loginMail",
+      "targets": [
+        ["id=textBox_loginPage_alreadyCustomer_loginMail", "id"],
+        ["name=textBox_loginPage_alreadyCustomer_loginMail", "name"],
+        ["css=#textBox_loginPage_alreadyCustomer_loginMail", "css:finder"],
+        ["xpath=//input[@id='textBox_loginPage_alreadyCustomer_loginMail']", "xpath:attributes"],
+        ["xpath=//div[@id='inputEmail']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06d0ad84-0bb4-45b2-8e76-c07f337aaa51",
+      "comment": "",
+      "command": "click",
+      "target": "css=#validationButton_login > span",
+      "targets": [
+        ["css=#validationButton_login > span", "css:finder"],
+        ["xpath=//button[@id='validationButton_login']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9bf4236-e4a1-4acc-938a-cddcf4fadd88",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=РАСПРОДАЖА",
+      "targets": [
+        ["linkText=РАСПРОДАЖА", "linkText"],
+        ["css=.highlightsoft:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'РАСПРОДАЖА')]", "xpath:link"],
+        ["xpath=//ul[@id='menuMainList']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pplp/cat-1326.aspx#shoppingtool=treestructureflyout')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'РАСПРОДАЖА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d03abe-9aa8-4227-8995-b4adc3283dac",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=РАСПРОДАЖА",
+      "targets": [
+        ["linkText=РАСПРОДАЖА", "linkText"],
+        ["css=.menu_title--isActive", "css:finder"],
+        ["xpath=//a[contains(text(),'РАСПРОДАЖА')]", "xpath:link"],
+        ["xpath=//ul[@id='menuMainList']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pplp/cat-1326.aspx#shoppingtool=treestructureflyout')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'РАСПРОДАЖА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "515c5866-eee1-4818-b4b4-cfded0104328",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=iconProfil",
+      "targets": [
+        ["id=iconProfil", "id"],
+        ["css=#iconProfil", "css:finder"],
+        ["xpath=//button[@id='iconProfil']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'ЕЛИЗАВЕТА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec14d99d-8b3d-4299-8e53-78bb0c06a7df",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=iconProfil",
+      "targets": [
+        ["id=iconProfil", "id"],
+        ["css=#iconProfil", "css:finder"],
+        ["xpath=//button[@id='iconProfil']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'ЕЛИЗАВЕТА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97b126ae-f1ff-4433-836b-add164f783a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=logOutLayer",
+      "targets": [
+        ["id=logOutLayer", "id"],
+        ["css=#logOutLayer", "css:finder"],
+        ["xpath=//button[@id='logOutLayer']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div/div/div[2]/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Выйти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "93541ab0-e963-4ee1-ad03-04abf8a06253",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ffe27b8e-621b-47ad-ac7b-e88fc93b1532"]
+  }],
+  "urls": ["https://www.laredoute.ru/"],
+  "plugins": []
+}
