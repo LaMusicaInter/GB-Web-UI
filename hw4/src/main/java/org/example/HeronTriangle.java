@@ -1,16 +1,10 @@
-package ru.iq_soft; /**
- * Класс HeronTriangle
- *      класс описывающий тругольник с тремя известными сторонами
- * @author : Хильченко А.Н
- * @project : HW_4
- * @date : 11.02.2022
- */
+package org.example; 
 
 public class HeronTriangle {
 
     /**
-     * Площадь треугльника по формуле Герона
-     *      S=sqrt(p(p-a)(p-b)(p-c)), где a,b,c - стороны, а р- полупериметр
+     * Находим площадь треугольника по формуле Герона
+     * S=sqrt(p(p-a)(p-b)(p-c)), где a,b,c - стороны, а р- полупериметр
      * @param a
      * @param b
      * @param c
