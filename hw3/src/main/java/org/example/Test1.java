@@ -1,13 +1,4 @@
-/**
- * Класс Test1
- *
- * @author : Хильченко А.Н
- * @project : HW 3
- * @date : 04.02.2022
- * @comments : Тест-кейс №1
- */
-
-package ru.iq_soft;
+package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -29,11 +20,11 @@ public class Test1 {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        // обработка предусловия
-        driver.get("https://ribomaniya.ru/?logout=yes");
+       
+        driver.get("https://www.laredoute.ru/");
 
         // тестовые действия
-        driver.get("https://ribomaniya.ru/cabinet/auth/?login=yes&backurl=%2F");
+        driver.get("https://www.laredoute.ru/login/login.aspx");
         driver.findElement(By.xpath("//input[@name='USER_LOGIN']")).sendKeys("stendMerlin");
         driver.findElement(By.xpath("//input[@name='USER_PASSWORD']")).sendKeys("D2EA_7abd");
         driver.findElement(By.xpath("//button[@name='Login']")).click();
