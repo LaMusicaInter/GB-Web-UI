@@ -1,12 +1,5 @@
-package ru.iq_soft; 
-/**
- * Класс Test3
- *
- * @author : Хильченко А.Н
- * @project : HW 3
- * @date : 04.02.2022
- * @comments : Тест-кейс №3
- */
+package org.example; 
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -29,12 +22,12 @@ public class Test3 {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        // обработка предусловия
-        driver.get("https://ribomaniya.ru/?logout=yes");
+        
+        driver.get("https://www.laredoute.ru/login/login.aspx");
 
-        // тестовые действия
-        driver.get("https://ribomaniya.ru/");
-        String s = driver.findElement(By.xpath("//div[@class='text-nowrap pe-2']/a")).getText();
+        
+        driver.get("https://www.laredoute.ru/");
+        String s = driver.findElement(By.xpath("//div[@class='footer-phone-info")).getText();
         assert (s.equals("8 (800) 350-32-12"));     // проверка значения по тесткейсу
 
         //результат теста
