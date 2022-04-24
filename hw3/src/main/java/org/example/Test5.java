@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class Test3 {
+public class Test4 {
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
 
@@ -30,7 +30,7 @@ public class Test3 {
         assert (s.equals("8 (800) 350-32-12"));     
 
         
-        System.out.println("Тест №3 пройден");     
+        System.out.println("Тест №4 пройден");     
         
 
         
