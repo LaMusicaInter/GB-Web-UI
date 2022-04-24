@@ -33,7 +33,7 @@ public class Test1 {
         assert (s.equals("Елизавета"));
 
         
-        System.out.println
+        System.out.println("Тест №1 пройден");
 
         
         driver.quit();
