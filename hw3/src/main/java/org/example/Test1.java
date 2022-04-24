@@ -25,11 +25,11 @@ public class Test1 {
 
         // тестовые действия
         driver.get("https://www.laredoute.ru/login/login.aspx");
-        driver.findElement(By.xpath("//input[@name='USER_LOGIN']")).sendKeys("stendMerlin");
-        driver.findElement(By.xpath("//input[@name='USER_PASSWORD']")).sendKeys("D2EA_7abd");
+        driver.findElement(By.xpath("//input[@name='USER_LOGIN']")).sendKeys("closer.time@yandex.ru");
+        driver.findElement(By.xpath("//input[@name='USER_PASSWORD']")).sendKeys("DoctorWho925");
         driver.findElement(By.xpath("//button[@name='Login']")).click();
         String s = driver.findElement(By.xpath("//a[@class='nav-link text-truncate pt-0']")).getText();
-        assert (s.equals("Александр"));
+        assert (s.equals("ЕЛИЗАВЕТА"));
 
         //результат теста
         System.out.println("Тест №1 пройден");   // выведется только если тест не упадет и условия удовлетворят assert
