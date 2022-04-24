@@ -28,13 +28,13 @@ public class Test3 {
         
         driver.get("https://www.laredoute.ru/");
         String s = driver.findElement(By.xpath("//div[@class='footer-phone-info")).getText();
-        assert (s.equals("8 (800) 350-32-12"));     // проверка значения по тесткейсу
+        assert (s.equals("8 (800) 555 75 35"));   
 
-        //результат теста
-        System.out.println("Тест №3 пройден");      // выведется только если тест не упадет и условия удовлетворят
-        // assert
+        
+        System.out.println
+        
 
-        // выход из браузера
+      
         driver.quit();
     }
 }
