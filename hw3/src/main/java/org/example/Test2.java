@@ -1,13 +1,9 @@
 /**
  * Класс Test2
- *      НЕГАТИВНЫЙ СЦЕНАРИЙ
- * @author : Хильченко А.Н
- * @project : HW 3
- * @date : 04.02.2022
- * @comments : Тест-кейс №2
+ * Негативный сценарий проверки
  */
 
-package ru.iq_soft;
+package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -20,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Test2 {
     public static void main(String[] args) {
-        // негативный сценарий
+        
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
@@ -31,21 +27,20 @@ public class Test2 {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        // обработка предусловия
+       
         driver.get("https://ribomaniya.ru/?logout=yes");
 
-        // тестовые действия
+        
         driver.get("https://ribomaniya.ru/cabinet/auth/?login=yes&backurl=%2F");
-        driver.findElement(By.xpath("//input[@name='USER_LOGIN']")).sendKeys("stendMerlin");
+        driver.findElement(By.xpath("//input[@name='USER_LOGIN']")).sendKeys("MrMango");
         driver.findElement(By.xpath("//input[@name='USER_PASSWORD']")).sendKeys("password"); // невалидный пароль
         driver.findElement(By.xpath("//button[@name='Login']")).click();
         String s = driver.findElement(By.xpath("//font[@class='errortext']")).getText();
         assert (s.equals("Неверный логин или пароль."));
 
-        //результат теста
-        System.out.println("Тест №2 пройден");    //выведется только если тест не упадет и условия удовлетворят assert
-
-        // выход из браузера
+        
+        System.out.println("Тест №2 пройден");    
+        
         driver.quit();
 
     }
