@@ -1,12 +1,4 @@
-package ru.iq_soft; 
-/**
- * Класс Test3
- *
- * @author : Хильченко А.Н
- * @project : HW 3
- * @date : 04.02.2022
- * @comments : Тест-кейс №3
- */
+package org.example; 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -29,19 +21,19 @@ public class Test3 {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        // обработка предусловия
+        
         driver.get("https://ribomaniya.ru/?logout=yes");
 
-        // тестовые действия
+        
         driver.get("https://ribomaniya.ru/");
         String s = driver.findElement(By.xpath("//div[@class='text-nowrap pe-2']/a")).getText();
-        assert (s.equals("8 (800) 350-32-12"));     // проверка значения по тесткейсу
+        assert (s.equals("8 (800) 350-32-12"));     
 
-        //результат теста
-        System.out.println("Тест №3 пройден");      // выведется только если тест не упадет и условия удовлетворят
-        // assert
+        
+        System.out.println("Тест №3 пройден");     
+        
 
-        // выход из браузера
+        
         driver.quit();
     }
 }
