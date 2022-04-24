@@ -1,13 +1,6 @@
-/**
- * Класс Test4
- *
- * @author : Хильченко А.Н
- * @project : HW 3
- * @date : 04.02.2022
- * @comments : Тест-кейс №4
- */
 
-package ru.iq_soft;
+
+package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
