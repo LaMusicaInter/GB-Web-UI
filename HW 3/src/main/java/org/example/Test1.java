@@ -30,8 +30,8 @@ public class Test1 {
 
         
         driver.get("https://www.laredoute.ru/login/login.aspx");
-        driver.findElement(By.xpath("//input[@name='USER_LOGIN']")).sendKeys("closer.time@YANDEX.RU");
-        driver.findElement(By.xpath("//input[@name='USER_PASSWORD']")).sendKeys("DoctorWho925");
+        driver.findElement(By.xpath("//input[@name='textBox_loginPage_alreadyCustomer_loginMail']")).sendKeys("closer.time@YANDEX.RU");
+        driver.findElement(By.xpath("//input[@name='textBox_loginPage_alreadyCustomer_password']")).sendKeys("DoctorWho925");
         driver.findElement(By.xpath("//button[@name='Login']")).click();
         String s = driver.findElement(By.xpath("//a[@class='nav-link text-truncate pt-0']")).getText();
         assert (s.equals("ЕЛИЗАВТЕА"));
