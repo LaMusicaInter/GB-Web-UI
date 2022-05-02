@@ -1,12 +1,4 @@
-package ru.iq_soft;
-/**
- * Класс UserStoryesTest
- *      Набор кейсов проверки пользовательских историй.
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 01.03.2022
- */
-
+package org.example;
 import java.util.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -23,7 +15,6 @@ public class UserStoryesTest extends AbstractTest{
     @Test
     @DisplayName("Тест-кейс №4: Выбор товара и добавление его в корзину, удаление его из корзины как позиции")
     public void testCase4() throws InterruptedException {
-        // идет работа только с одним конкретным товаром, который принят в качестве тестового
         new CommodPage(getWebDriver())
                 .pressMainMenuItem()
                 .pressCategoryItem()
@@ -31,59 +22,49 @@ public class UserStoryesTest extends AbstractTest{
                 .pressCommodVersionItem()
                 .pressAddCommodToBacket()
                 .pressBacketBtt();
-        assertTrue(new BacketPage(getWebDriver()).getCommodText().equals("Trout Master Ridge Sbiro (12g Floating)"));
+        assertTrue(new BacketPage(getWebDriver()).getCommodText().equals("Predator сер. LJH122 (010)"));
         String s = new BacketPage(getWebDriver())
                 .pressDelCommod()
                 .getPriceText();
         assertTrue(s.equals("0 р."));
 
-        //результат теста
-        logger.info("Тест-кейс №4 пройден");      // выведется только если тест не упадет и условия удовлетворят
+        logger.info("Тест-кейс №4 пройден"); 
     }
 
     @Test
     @DisplayName("Тест-кейс №6: Проверка работы формы ввода личных данных")
     public void testCase6()  throws InterruptedException {
-        // тестовые действия
         getWebDriver().get("https://ribomaniya.ru");
         // new WebDriverWait(getWebDriver(), 120).until(ExpectedConditions.urlContains(".ru")); // /cabinet/
-        // авторизация
         new MainPage(getWebDriver()).pressLoginBtt();
         new LoginPage(getWebDriver())
-                .setLogin("stendMerlin")
-                .setPassword("D2EA_7abd")
+                .setLogin("MrMango")
+                .setPassword("kejkenna24")
                 .pressInBtt();
-        assertTrue(new MainPage(getWebDriver()).checkUser("Александр"));
+        assertTrue(new MainPage(getWebDriver()).checkUser("Елизавета"));
         logger.debug(" - тесткейс № 6 : авторизация успешна");
-        // переход в личный кабинет
         new MainPage(getWebDriver()).pressCabinetBtt();
-        // переход в персональным данным
         new CabinetPage(getWebDriver())
                 .pressPersonlBtt()
-                .setNameField("Иван")
-                .setSecondNameField("Иванович")
-                .setLastNameField("Иванов")
+                .setNameField("Анна")
+                .setSecondNameField("Викторовна")
+                .setLastNameField("Волкова")
                 .clearNewPasswordField()
                 .pressApplyBtt();
 
-        // в результате теста обнаружен дефект при котором в результате записи новых данных
-        // имя пользователя в шапке страницы не обновляется, данные о дефекте переданы владельцу сайта
-        // обновление страницы необходимо для того, чтобы обойти эту проблему
 
-        // проверка
-        getWebDriver().get("https://ribomaniya.ru/cabinet/personal/?"); // обновление страницы
-        assertTrue(new MainPage(getWebDriver()).checkUser("Иван"));
+        getWebDriver().get("https://ribomaniya.ru/cabinet/personal/?"); 
+        assertTrue(new MainPage(getWebDriver()).checkUser("Анна"));
         logger.debug(" - тесткейс № 6 : данные пользователя сохранены");
-        // возврат к справочным данным тестового пользователя
         new CabinetPage(getWebDriver())
                 .pressPersonlBtt()
-                .setNameField("Александр")
-                .setSecondNameField("Александрович")
-                .setLastNameField("Александров")
+                .setNameField("Елизавета")
+                .setSecondNameField("Петровна")
+                .setLastNameField("Сухоручко")
                 .clearNewPasswordField()
                 .pressApplyBtt();
-        getWebDriver().get("https://ribomaniya.ru/cabinet/personal/?"); // обновление страницы
-        assertTrue(new MainPage(getWebDriver()).checkUser("Александр"));
+        getWebDriver().get("https://ribomaniya.ru/cabinet/personal/?"); 
+        assertTrue(new MainPage(getWebDriver()).checkUser("Елизавета"));
         logger.debug(" - тесткейс № 6 : данные тостового пользователя восстановлены");
 
         logger.info("Тест-кейс №6 пройден");
