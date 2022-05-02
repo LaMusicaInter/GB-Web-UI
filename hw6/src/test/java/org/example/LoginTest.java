@@ -1,11 +1,4 @@
-package ru.iq_soft;
-/**
- * Класс LoginTest
- *      Тесткейсы авторизации
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 28.02.2022
- */
+package org.example;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -19,15 +12,14 @@ public class LoginTest extends AbstractTest{
     @Test
     @DisplayName("Тест-кейс №1: Авторизация на сайте")
     public void testCase1() {
-        // тестовые действия
         getWebDriver().get("https://ribomaniya.ru");
         new MainPage(getWebDriver()).pressLoginBtt();
         new LoginPage(getWebDriver())
-                .setLogin("stendMerlin")
-                .setPassword("D2EA_7abd")
+                .setLogin("MrMango")
+                .setPassword("kejkenna24")
                 .pressInBtt();
-        assertTrue(new MainPage(getWebDriver()).checkUser("Александр"));
-        logger.info("Тест-кейс №1 пройден");   // выведется только если тест не упадет и условия удовлетворят assert
+        assertTrue(new MainPage(getWebDriver()).checkUser("Елизавета"));
+        logger.info("Тест-кейс №1 пройден");  
     }
 
     @Test
@@ -37,8 +29,8 @@ public class LoginTest extends AbstractTest{
         new MainPage(getWebDriver()).pressLoginBtt();
         assertTrue(
                 new LoginPage(getWebDriver())
-                        .setLogin("stendMerlin")
-                        .setPassword("password")        // неверный пароль
+                        .setLogin("MrMango")
+                        .setPassword("password")  // неверный пароль
                         .pressInBtt()
                         .isError()
         );
