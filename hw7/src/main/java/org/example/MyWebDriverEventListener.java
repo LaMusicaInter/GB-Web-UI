@@ -1,4 +1,4 @@
-package ru.iq_soft;
+package org.example;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -101,8 +101,7 @@ public class MyWebDriverEventListener implements WebDriverEventListener {
     @Override
     public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
         logger.info("Введено значение - "+ Arrays.toString(keysToSend));
-            // вообще-то тут сохранится пароль, а этого делать нельзя,
-            // но в данном случае можно потому что я это знаю и делаю намеренно…
+
     }
 
     @Override
