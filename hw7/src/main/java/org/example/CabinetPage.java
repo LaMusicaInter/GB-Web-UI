@@ -1,11 +1,4 @@
-package ru.iq_soft;
-/**
- * Класс CabinetPage
- *      класс страницы личных данных
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 01.03.2022
- */
+package org.example;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -51,7 +44,7 @@ public class CabinetPage extends AbstractPage{
 
     public CabinetPage pressApplyBtt()  throws InterruptedException{
         // new Actions(getDriver()).moveToElement(this.applyBtt).click().perform();
-        //        но этот фокус не проходит (в данном случае) и нужно делать скролл…
+        
         js.executeScript("window.scrollTo(0, 900)");
         Thread.sleep(1000);
         this.applyBtt.click();
