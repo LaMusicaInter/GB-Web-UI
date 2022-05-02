@@ -1,11 +1,4 @@
-package ru.iq_soft;
-/**
- * Класс AbstractPage
- *      абстрактная страница сайта
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 28.02.2022
- */
+package org.example;
 
 import java.util.*;
 
