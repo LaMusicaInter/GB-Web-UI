@@ -1,11 +1,4 @@
-package ru.iq_soft;
-/**
- * Класс BacketPage
- *      класс страницы корзины
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 01.03.2022
- */
+package org.example;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -17,15 +10,10 @@ import java.util.*;
 public class BacketPage extends AbstractPage{
     JavascriptExecutor js = (JavascriptExecutor) getDriver();
 
-    // товар найденный по наименованию
-    @FindBy(xpath = "//a/span[text()='Trout Master Ridge Sbiro (12g Floating)']")
+    @FindBy(xpath = "//a/span[text()='Predator сер. LJH122 (010)']")
     private WebElement currentCommod;
-
-    // кнопка удаления товара
     @FindBy(xpath = "//span[@class='basket-item-actions-remove']")
     private WebElement deleteCommod;
-
-    // итоговая стоимость корзины
     @FindBy(xpath = "//div[@data-entity='basket-total-price']")
     private WebElement currentPrice;
 
