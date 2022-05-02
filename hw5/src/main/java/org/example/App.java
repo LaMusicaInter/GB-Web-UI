@@ -1,4 +1,4 @@
-package ru.iq_soft;
+package org.example;
 
 /**
  * Hello world!
