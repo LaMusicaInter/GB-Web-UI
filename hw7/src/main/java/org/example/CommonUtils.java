@@ -1,12 +1,4 @@
-package ru.iq_soft;
-/**
- * Класс CommonUtils
- *
- * @author : Хильченко А.Н
- * @project : HW_7
- * @date : 09.03.2022
- * @comments :
- */
+package org.example;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
