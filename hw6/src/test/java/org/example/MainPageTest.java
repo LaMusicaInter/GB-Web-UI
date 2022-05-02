@@ -1,12 +1,4 @@
-/**
- * Класс MainPageTest
- *      тест-кейсы главной страницы
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 01.03.2022
- */
-
-package ru.iq_soft;
+package org.example;
 import java.util.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -32,12 +24,11 @@ public class MainPageTest extends AbstractTest{
     @CsvFileSource(resources = "/menudata.csv")
     @DisplayName("Тест-кейс №5: Проверка работы главных полей товарного каталога сайта")
     public void testCase5(String s_xpath, String s_title, String s_header) throws InterruptedException {
-        // Тестовые действия для одного набора тестовых данных
         getWebDriver().get("https://ribomaniya.ru");
         MainPage e = new MainPage(getWebDriver());
-        assertTrue(e.checkMenuItemTitle(s_xpath,s_title)); // проверка названия до нажатия
+        assertTrue(e.checkMenuItemTitle(s_xpath,s_title));
         e.pressMenuItem(s_xpath);
-        assertTrue(e.checkMenuItemTitle(s_xpath,s_title)); // проверка названия после нажатия
+        assertTrue(e.checkMenuItemTitle(s_xpath,s_title));
         assertTrue(e.checkContentHeader(s_header));
         logger.info("Тест-кейс №5 пройден ("+s_title+")");
     }
