@@ -1,15 +1,7 @@
-/**
- * Класс MainPage
- *      главная страница сайта https://ribomaniya.ru
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 28.02.2022
- */
+package org.example;
 
-package ru.iq_soft;
 import java.time.Duration;
 import java.util.*;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,27 +11,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class MainPage extends AbstractPage{
-    // кнопки авторизации и перехода в личный кабинет
     @FindBy(xpath = "//li//a[@href='/cabinet/auth/?login=yes&backurl=%2F']//i")
     private WebElement loginBtt;
 
     @FindBy(xpath = "//li//a[@href='/cabinet/']//i")
     private WebElement cabinetBtt;
 
-    // имя пользователя
     @FindBy(xpath = "//a[@class='nav-link text-truncate pt-0']")
     private WebElement userName;
 
-    // номер телефона
     @FindBy(xpath = "//div[@class='text-nowrap pe-2']/a")
     private WebElement phoneNum;
 
-    // Заголовок страницы с контентом
     @FindBy(xpath = "//h1")
     private WebElement contentHeader;
-
-    // пункты меню не описываю, поскольку они уже описаны в csv файле, осталось делать для их анализа
-    // методы «общего случая»
 
     public MainPage (WebDriver driver){
         super(driver);
