@@ -181,7 +181,7 @@ public class SixInOneTest extends AbstractTest {
                 .pressApplyBtt();
         getWebDriver().get("https://ribomaniya.ru/cabinet/personal/?"); 
         assertTrue(new MainPage(getWebDriver()).checkUser("Елизавета"));
-        logger.debug(" - тесткейс № 6 : данные тостового пользователя восстановлены");
+        logger.debug(" - тесткейс № 6 : данные тестового пользователя восстановлены");
         saveBrowserLogs();
         logger.info("Тест-кейс №6 пройден");
     }
