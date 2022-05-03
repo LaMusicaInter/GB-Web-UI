@@ -1,11 +1,4 @@
-package ru.iq_soft;
-/**
- * Класс AbstractTest
- *       Суперкласс тестов
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 28.02.2022
- */
+package org.example;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -25,7 +18,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public abstract class AbstractTest {
 
-    // static WebDriver driver; — он оборачивается, поэтому как отдельная переменная существовать ен будет
     Logger logger = LoggerFactory.getLogger("Test-Case's 1-6");
     static EventFiringWebDriver driver;
 
@@ -38,33 +30,17 @@ public abstract class AbstractTest {
         options.addArguments("--incognito");
         options.addArguments("disable-popup-blocking");
 
-        /*
-        Столкнулся с проблемой, при которой первый тесткейс в наборе вылетал по таймауту (без переходв к самому тесту,
-        но после выполнения блока BeforeEach), а остальные работали нормально.
-         */
 
-        // на всякий случай оставляю все возможные опции, которые могут лечить эту проблему
-        //options.addArguments("enable-automation");                // https://stackoverflow.com/a/43840128/1689770
-        //options.addArguments("--headless");                       // only if you are ACTUALLY running headless
-        options.addArguments("--no-sandbox");                       //https://stackoverflow.com/a/50725918/1689770
-        options.addArguments("--disable-infobars");                 //https://stackoverflow.com/a/43840128/1689770
-        //options.addArguments("--disable-dev-shm-usage");          //https://stackoverflow.com/a/50725918/1689770
-        //options.addArguments("--disable-browser-side-navigation"); //https://stackoverflow.com/a/49123152/1689770
+        options.addArguments("--no-sandbox");                     
+        options.addArguments("--disable-infobars");                 
         options.addArguments("--disable-gpu");
-
-        /*
-        driver = new ChromeDriver(options);
-            вместо этого драйвер оборачивается в EventFiringWebDriver и в нем регистрируется MyWebDriverEventListener
-            в котором прописываются точки логирования на любое из действий
-        */
 
         driver = new EventFiringWebDriver(new ChromeDriver(options));
         driver.register(new MyWebDriverEventListener());
 
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
-        // стенд медленный, таймауты большие…
-        
+
     }
 
     @BeforeEach
