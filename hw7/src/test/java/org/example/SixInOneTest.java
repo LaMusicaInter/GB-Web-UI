@@ -100,7 +100,6 @@ public class SixInOneTest extends AbstractTest {
     @ParameterizedTest
     @CsvFileSource(resources = "/menudata.csv")
     @DisplayName("Тест-кейс №5: Проверка работы главных полей товарного каталога сайта")
-    // Аннотации allure
     @Description("Тест-кейс №5: Проверка работы главных полей товарного каталога сайта")
     @Link("https://ribomaniya.ru")
     @Severity(SeverityLevel.NORMAL)
@@ -134,7 +133,7 @@ public class SixInOneTest extends AbstractTest {
                 .pressCommodVersionItem()
                 .pressAddCommodToBacket()
                 .pressBacketBtt();
-        assertTrue(new BacketPage(getWebDriver()).getCommodText().equals("Trout Master Ridge Sbiro (12g Floating)"));
+        assertTrue(new BacketPage(getWebDriver()).getCommodText().equals("Predator сер. LJH122 (010)"));
         String s = new BacketPage(getWebDriver())
                 .pressDelCommod()
                 .getPriceText();
@@ -159,7 +158,7 @@ public class SixInOneTest extends AbstractTest {
                 .setLogin("MrMango")
                 .setPassword("kejkenna24")
                 .pressInBtt();
-        assertTrue(new MainPage(getWebDriver()).checkUser("Александр"));
+        assertTrue(new MainPage(getWebDriver()).checkUser("Елизавета"));
         logger.debug(" - тесткейс № 6 : авторизация успешна");
         new MainPage(getWebDriver()).pressCabinetBtt();
         new CabinetPage(getWebDriver())
