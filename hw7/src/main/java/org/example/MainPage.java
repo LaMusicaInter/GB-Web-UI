@@ -32,13 +32,13 @@ public class MainPage extends AbstractPage{
 
     public MainPage pressLoginBtt(){
         this.loginBtt.click();
-        new WebDriverWait(getDriver(), 10).until(ExpectedConditions.urlContains("/cabinet/auth/?login")); // /cabinet/auth/?login=yes&backurl=%2F
+        new WebDriverWait(getDriver(), 10).until(ExpectedConditions.urlContains("/cabinet/auth/?login"));
         return this;
     }
 
     public MainPage pressCabinetBtt(){
         this.cabinetBtt.click();
-        new WebDriverWait(getDriver(), 10).until(ExpectedConditions.urlContains("/cabinet/")); // /cabinet/
+        new WebDriverWait(getDriver(), 10).until(ExpectedConditions.urlContains("/cabinet/"));
         return this;
     }
 
