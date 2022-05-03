@@ -1,11 +1,5 @@
-package ru.iq_soft;
-/**
- * Класс CabinetPage
- *      класс страницы личных данных
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 01.03.2022
- */
+package org.example;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
