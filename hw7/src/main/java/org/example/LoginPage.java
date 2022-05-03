@@ -1,12 +1,5 @@
-/**
- * Класс LoginPage
- *      класс страницы авторизации
- * @author : Хильченко А.Н
- * @project : HW_6
- * @date : 28.02.2022
- */
 
-package ru.iq_soft;
+package org.example;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
